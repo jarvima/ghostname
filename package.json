@@ -1,0 +1,21 @@
+{
+  "name": "ghostname",
+  "version": "0.0.0",
+  "main": "app.js",
+  "dependencies": {
+    "body-parser": "1.17.2",
+    "ejs": "2.x.x",
+    "express": "4.x.x",
+    "mongodb":"2.x.x"
+  },
+  "engines": {
+    "node": "6.x.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jarvima/ghostname"
+  },
+  "scripts": {
+    "start": "node app.js"
+  }
+}
