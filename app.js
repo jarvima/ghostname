@@ -40,6 +40,10 @@ app.post('/add-name', setHeaders, function(request, response) {
   groupData.addName(request, response);
 });
 
+app.post('/stop-adding', setHeaders, function(request, response) {
+  groupData.stopAdding(request, response);
+});
+
 app.post('/start-reading', setHeaders, function(request, response) {
   groupData.startReading(request, response);
 });
