@@ -32,8 +32,8 @@ app.post('/join-group', setHeaders, function(request, response) {
   groupData.joinGroup(request, response);
 });
 
-app.get('/group-info/:groupName/:time', setHeaders, function(request, response) {
-  groupData.getGroupInfo(request, response);
+app.post('/check-group-info', setHeaders, function(request, response) {
+  groupData.checkGroupInfo(request, response);
 });
 
 app.post('/add-name', setHeaders, function(request, response) {
@@ -42,10 +42,6 @@ app.post('/add-name', setHeaders, function(request, response) {
 
 app.post('/stop-adding', setHeaders, function(request, response) {
   groupData.stopAdding(request, response);
-});
-
-app.post('/start-reading', setHeaders, function(request, response) {
-  groupData.startReading(request, response);
 });
 
 app.post('/start-guessing', setHeaders, function(request, response) {
